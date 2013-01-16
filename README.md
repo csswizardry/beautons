@@ -2,8 +2,8 @@
 
 _A beautifully simple button toolkit_
 
-Demo: [jsfiddle.net/csswizardry/yS3EY](http://jsfiddle.net/csswizardry/yS3EY/)
-Docs: [csswizardry.com/beautons](http://csswizardry.com/beautons/)
+* Demo: [jsfiddle.net/csswizardry/yS3EY](http://jsfiddle.net/csswizardry/yS3EY/)
+* Docs: [csswizardry.com/beautons](http://csswizardry.com/beautons/)
 
 beautons (boo-tons) is a super simple CSS toolkit for creating buttons. Just buttons.
 
