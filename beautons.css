@@ -40,29 +40,31 @@
  * Base button styles.
  *
  * 1. Allow us to better style box model properties.
- * 2. Stop buttons wrapping and looking broken.
- * 3. Force all elements using beautons to appear clickable.
- * 4. If the button’s text is 1em, and the button is (3 * font-size) tall, then
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Stop buttons wrapping and looking broken.
+ * 4. Force all elements using beautons to appear clickable.
+ * 5. If the button’s text is 1em, and the button is (3 * font-size) tall, then
  *    there is 1em of space above and below that text. We therefore apply 1em
  *    of space to the left and right, as padding, to keep consistent spacing.
- * 5. Basic cosmetics for default buttons. Change or override at will.
- * 6. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ * 6. Basic cosmetics for default buttons. Change or override at will.
+ * 7. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  */
 .btn{
     display:inline-block;       /* [1] */
-    white-space:nowrap;         /* [2] */
-    cursor:pointer;             /* [3] */
-    line-height:3;              /* [4] */
-    padding-right:1em;          /* [4] */
-    padding-left: 1em;          /* [4] */
-    color:#fff;                 /* [5] */
-    background-color:#2c77ba;   /* [5] */
-    border-radius:4px;          /* [5] */
+    vertical-align:middle;      /* [2] */
+    white-space:nowrap;         /* [3] */
+    cursor:pointer;             /* [4] */
+    line-height:3;              /* [5] */
+    padding-right:1em;          /* [5] */
+    padding-left: 1em;          /* [5] */
+    color:#fff;                 /* [6] */
+    background-color:#2c77ba;   /* [6] */
+    border-radius:4px;          /* [6] */
 }
 
 .btn,
     .btn:hover{
-        text-decoration:none;   /* [6] */
+        text-decoration:none;   /* [7] */
     }
 
 
