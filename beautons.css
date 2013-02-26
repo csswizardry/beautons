@@ -154,6 +154,7 @@
  * Make the button inherit sizing from its parent.
  */
 .btn--natural{
+    vertical-align:baseline;
     font-size:inherit;
     line-height:inherit;
     padding-right:0.5em;
