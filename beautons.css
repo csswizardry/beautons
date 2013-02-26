@@ -39,17 +39,19 @@
 /**
  * Base button styles.
  *
- * 1. Allow us to better style box model properties.
- * 2. Line different sized buttons up a little nicer.
- * 3. Stop buttons wrapping and looking broken.
- * 4. Make buttons inherit font styles.
- * 5. Force all elements using beautons to appear clickable.
- * 6. Normalise box model styles.
- * 7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
- *    there is 1em of space above and below that text. We therefore apply 1em
- *    of space to the left and right, as padding, to keep consistent spacing.
- * 8. Basic cosmetics for default buttons. Change or override at will.
- * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ *  1. Allow us to better style box model properties.
+ *  2. Line different sized buttons up a little nicer.
+ *  3. Stop buttons wrapping and looking broken.
+ *  4. Make buttons inherit font styles.
+ *  5. Force all elements using beautons to appear clickable.
+ *  6. Normalise box model styles.
+ *  7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
+ *     there is 1em of space above and below that text. We therefore apply 1em
+ *     of space to the left and right, as padding, to keep consistent spacing.
+ *  8. Basic cosmetics for default buttons. Change or override at will.
+ *  9. Unfortunately, `line-height` won’t work on `input`s in Firefox, use a
+ *     `button` element instead.
+ * 10. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  */
 .btn{
     display:inline-block;       /* [1] */
@@ -70,9 +72,13 @@
     border-radius:4px;          /* [8] */
 }
 
+input.btn{
+    outline:10px solid red;     /* [9] */
+}
+
 .btn,
     .btn:hover{
-        text-decoration:none;   /* [9] */
+        text-decoration:none;   /* [10] */
     }
 
     .btn:hover{
