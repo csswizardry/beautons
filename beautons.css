@@ -209,6 +209,7 @@ input.btn{
         background-color:#ddd;
         color:#777;
         cursor:text;            /* [1] */
+        box-shadow:none;
     }
 
 
