@@ -6,3 +6,4 @@
 * **v0.2.2**    Normalise natural buttons’ vertical alignment
 * **v0.2.3**    Add warning about using beautons on inputs in Firefox
 * **v0.2.4**    Remove on-hover box shadow from inactive buttons
+* **v0.2.5**    Make soft button’s rounding method more robust

@@ -225,7 +225,7 @@ input.btn{
  * 1. Use an overly-large number to ensure completely rounded, pill-like ends.
  */
 .btn--soft{
-    border-radius:200px;        /* [1] */
+    border-radius:5em;        /* [1] */
 }
 
 .btn--hard{
