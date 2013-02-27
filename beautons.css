@@ -49,36 +49,35 @@
  *     there is 1em of space above and below that text. We therefore apply 1em
  *     of space to the left and right, as padding, to keep consistent spacing.
  *  8. Basic cosmetics for default buttons. Change or override at will.
- *  9. Unfortunately, `line-height` won’t work on `input`s in Firefox, use a
- *     `button` element instead.
+ *  9. Fixes odd inner spacing in IE7.
  * 10. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ * 11. Prevents from inheriting default anchor styles.
  */
 .btn{
     display:inline-block;       /* [1] */
     vertical-align:middle;      /* [2] */
     white-space:nowrap;         /* [3] */
-    font-family:inherit;        /* [4] */
+    font-family: inherit;       /* [4] */
     font-size:100%;             /* [4] */
     cursor:pointer;             /* [5] */
     border:none;                /* [6] */
     margin:0;                   /* [6] */
     padding-top:   0;           /* [6] */
     padding-bottom:0;           /* [6] */
+    height:     3em;            /* [7] */
     line-height:3;              /* [7] */
     padding-right:1em;          /* [7] */
     padding-left: 1em;          /* [7] */
     color:#fff;                 /* [8] */
     background-color:#2c77ba;   /* [8] */
     border-radius:4px;          /* [8] */
-}
-
-input.btn{
-    outline:10px solid red;     /* [9] */
+    overflow:visible;           /* [9] */
 }
 
 .btn,
     .btn:hover{
         text-decoration:none;   /* [10] */
+        color:#fff;             /* [11] */
     }
 
     .btn:hover{
@@ -90,8 +89,10 @@ input.btn{
         outline:none;
         box-shadow:0 0 5px rgba(0, 0, 0, 0.5) inset;
     }
-
-
+    .btn::-moz-focus-inner { 
+        border: 0;
+        padding: 0;
+    }
 
 
 
@@ -108,18 +109,21 @@ input.btn{
     padding-right:0.5em;
     padding-left: 0.5em;
     line-height:2;
+    height:     2em;
 }
 
 .btn--large{
     padding-right:1.5em;
     padding-left: 1.5em;
     line-height:4;
+    height:     4em;
 }
 
 .btn--huge{
     padding-right:2em;
     padding-left: 2em;
     line-height:5;
+    height:     5em;
 }
 
 /**
