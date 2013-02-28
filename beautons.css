@@ -57,25 +57,26 @@
     display:inline-block;       /* [1] */
     vertical-align:middle;      /* [2] */
     white-space:nowrap;         /* [3] */
-    font-family: inherit;       /* [4] */
+    font-family:inherit;        /* [4] */
     font-size:100%;             /* [4] */
     cursor:pointer;             /* [5] */
     border:none;                /* [6] */
     margin:0;                   /* [6] */
     padding-top:   0;           /* [6] */
     padding-bottom:0;           /* [6] */
-    height:     3em;            /* [7] */
     line-height:3;              /* [7] */
+    height:     3em;            /* [7] */
     padding-right:1em;          /* [7] */
     padding-left: 1em;          /* [7] */
-    color:#fff;                 /* [8] */
     background-color:#2c77ba;   /* [8] */
     border-radius:4px;          /* [8] */
     overflow:visible;           /* [9] */
 }
 
 .btn,
-    .btn:hover{
+    .btn:hover,
+    .btn:active,
+    .btn:focus{
         text-decoration:none;   /* [10] */
         color:#fff;             /* [11] */
     }
@@ -89,10 +90,12 @@
         outline:none;
         box-shadow:0 0 5px rgba(0, 0, 0, 0.5) inset;
     }
+
     .btn::-moz-focus-inner { 
         border: 0;
         padding: 0;
     }
+
 
 
 
@@ -167,6 +170,7 @@
     vertical-align:baseline;
     font-size:inherit;
     line-height:inherit;
+    height:auto;
     padding-right:0.5em;
     padding-left: 0.5em;
 }
