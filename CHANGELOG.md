@@ -8,3 +8,4 @@
 * **v0.2.4**    Remove on-hover box shadow from inactive buttons
 * **v0.2.5**    Make soft button’s rounding method more robust
 * **v0.3**      Fix Firefox’ rendering of `input`s
+* **v0.4**      Alter cursor style on disabled buttons
