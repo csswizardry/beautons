@@ -76,7 +76,8 @@
 .btn,
     .btn:hover,
     .btn:active,
-    .btn:focus{
+    .btn:focus,
+    .btn:visited{
         text-decoration:none;   /* [10] */
         color:#fff;             /* [11] */
     }
