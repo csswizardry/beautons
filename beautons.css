@@ -82,12 +82,12 @@
         color:#fff;             /* [11] */
     }
 
-    .btn:hover{
+    .btn:hover,
+    .button:focus{
         box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
     }
 
-    .btn:active,
-    .btn:focus{
+    .btn:active{
         outline:none;
         box-shadow:0 0 5px rgba(0, 0, 0, 0.5) inset;
     }
